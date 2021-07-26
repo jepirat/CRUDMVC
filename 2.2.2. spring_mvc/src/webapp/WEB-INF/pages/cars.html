@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org" >
+<head>
+  <meta charset="UTF-8">
+  <title>$Title$</title>
+  <style>table th, table td {padding: 5px;}</style>
+</head>
+<body>
+<h1>th:each</h1>
+<table border="1">
+  <tr>
+    <th>num</th>
+    <th>name</th>
+    <th>speed</th>
+    <th>color</th>
+  </tr>
+<tr th:each="carsSort, state : ${cars}">
+  <td th:text="${state.count}">num</td>
+  <td th:text="${carsSort.getName()}">name</td>
+  <td th:text="${carsSort.getSpeed()}">speed</td>
+  <td th:text="${carsSort.getColor()}">color</td>
+</tr>
+</body>
+</html>
