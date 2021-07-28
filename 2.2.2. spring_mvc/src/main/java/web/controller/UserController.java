@@ -1,2 +1,3 @@
-package web.controller;public class UserController {
+package web.controller;
+public class UserController {
 }
