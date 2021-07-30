@@ -1,6 +1,6 @@
 package services;
 
-import entities.Car;
+import hiber.entities.Car;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

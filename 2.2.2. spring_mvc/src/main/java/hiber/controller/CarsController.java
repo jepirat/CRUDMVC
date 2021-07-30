@@ -1,4 +1,4 @@
-package web.controller;
+package hiber.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,6 +8,7 @@ import services.CarService;
 
 @Controller
 public class CarsController {
+
     CarService carService = new CarService();
     @GetMapping(value = "/cars")
     public String printCars(Model model, @RequestParam(value = "quality", required = false) Integer quality) {

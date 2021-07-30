@@ -1,4 +1,4 @@
-package entities;
+package hiber.entities;
 public class Car {
     String name;
     String speed;

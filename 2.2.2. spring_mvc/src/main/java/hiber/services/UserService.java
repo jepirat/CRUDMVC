@@ -1,10 +1,10 @@
-package DAO;
+package hiber.services;
 
-import entities.User;
+import hiber.entities.User;
 
 import java.util.List;
 
-public interface UserDAO {
+public interface UserService {
     public User getUser();
     public List<User> getAllUsers();
     public void saveUser(User user);

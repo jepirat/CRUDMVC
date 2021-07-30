@@ -1,12 +1,9 @@
-package DAO;
+package hiber.DAO;
 
-import entities.User;
+import hiber.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-
 import javax.persistence.EntityManager;
 import java.util.List;
 
@@ -14,6 +11,9 @@ import java.util.List;
 public class UserDAOImpl implements UserDAO {
     @Autowired
     EntityManager entityManager;
+
+    public UserDAOImpl() {
+    }
 
     @Override
     public User getUser() {
@@ -25,10 +25,10 @@ public class UserDAOImpl implements UserDAO {
         return null;
     }
 
-    @Transactional
-    @Override
-    public void saveUser(User user) {
-       entityManager.persist(user);
+   @Transactional
+   @Override
+   public void saveUser(User user) {
+      entityManager.persist(user);
     }
 
 
