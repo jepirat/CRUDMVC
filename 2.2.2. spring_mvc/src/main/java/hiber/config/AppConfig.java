@@ -1,4 +1,4 @@
-package hiber.config.config;
+package hiber.config;
 import hiber.DAO.UserDAOImpl;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
